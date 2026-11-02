@@ -834,7 +834,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
-<div style="flex: 2 1 460px; min-width: 0; padding: 24px; border-radius: 20px; background: #171719; color: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
+<div style="flex: 1 1 100%; min-width: 0; padding: 24px; border-radius: 20px; background: #0E0E10; color: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
 <span style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap"><span style="font-size: 14px; font-weight: 700; color: #7EB2FF">분야별 분포</span><span style="font-size: 13px; font-weight: 600; color: rgba(247,247,248,0.6)">막대를 누르면 필터돼요</span></span>
 <div style="display: flex; height: 48px; border-radius: 12px; overflow: hidden; gap: 3px">
 <sc-for list="{{catSegs}}" as="s" hint-placeholder-count="4">
@@ -846,19 +846,6 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: rgba(247,247,248,0.8)"><span style="width: 10px; height: 10px; border-radius: 3px; background: {{s.bg}}"></span>{{s.label}}</span>
 </sc-for>
 </div>
-</div>
-<div style="flex: 1 1 260px; min-width: 0; padding: 24px; border-radius: 20px; background: #F7F7F8; display: flex; flex-direction: column; gap: 12px">
-<span style="font-size: 14px; font-weight: 700; color: #70737C">연도별</span>
-<div role="img" aria-label="{{yearAria}}" style="flex: 1; min-height: 110px; display: flex; align-items: flex-end; gap: 12px">
-<sc-for list="{{years}}" as="y" hint-placeholder-count="3">
-<span style="flex: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px"><span style="font-size: 16px; font-weight: 700; color: #171719">{{y.n}}</span><span class="bar" style="width: 100%; height: {{y.h}}%; border-radius: 8px 8px 0 0; background: {{y.bg}}"></span><span style="font-size: 13px; font-weight: 600; color: #5A5C63">{{y.y}}</span></span>
-</sc-for>
-</div>
-</div>
-<div style="flex: 1 1 200px; min-width: 0; padding: 24px; border-radius: 20px; background: {{accent}}; color: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between; gap: 12px">
-<span style="font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.82)">대상 · 1위</span>
-<span style="font-size: 56px; line-height: 1; font-weight: 700; letter-spacing: -0.04em">{{topCount}}</span>
-<span style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.86)">장관상 2회 · 공공기관장상 다수</span>
 </div>
 </div>
 
