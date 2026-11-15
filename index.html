@@ -63,6 +63,9 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 @media (max-width:760px){.g3,.flow3{grid-template-columns:1fr}.flow3 .arr{display:none}}
 @media (max-width:480px){.g4{grid-template-columns:1fr}}
 .g2c{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.swipe{display:contents}
+.swipe-hint{display:none}
+@media (max-width:640px){.swipe,.hswipe{display:flex!important;flex:1 1 100%;flex-wrap:nowrap!important;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1 * clamp(16px, 4vw, 32px));padding:2px clamp(16px, 4vw, 32px) 6px;scroll-padding:0 clamp(16px, 4vw, 32px);scrollbar-width:none;-webkit-overflow-scrolling:touch}.swipe::-webkit-scrollbar,.hswipe::-webkit-scrollbar{display:none}.swipe>*,.hswipe>*{flex:0 0 84%!important;scroll-snap-align:start;min-width:0}.swipe-hint{display:flex}}
 @media (max-width:760px){.g2c{grid-template-columns:1fr}}
 .stat + .stat{box-shadow:inset 1px 0 0 rgba(112,115,124,0.16)}
 @media (max-width:960px){.stat:nth-child(3){box-shadow:none}}
@@ -201,6 +204,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 </div>
 </div>
 
+<div class="swipe">
 <div class="lift" style="flex: 1 1 280px; min-width: 0; padding: 28px; border-radius: 20px; background: #FFFFFF; box-shadow: inset 0 0 0 1px rgba(112,115,124,0.12); display: flex; flex-direction: column; gap: 14px">
 <span style="font-size: 14px; font-weight: 700; color: {{accent}}">투자유치 · 자금조달</span>
 <div aria-hidden="true" style="display: flex; align-items: center; gap: 8px; padding: 16px 0">
@@ -269,8 +273,9 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 <figcaption style="padding: 22px 28px 28px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 20px; font-weight: 700; color: #171719">학생들이 보내온 합격 소식</span><span style="font-size: 15px; line-height: 24px; font-weight: 500; color: #5A5C63">4년 동안 500명 넘는 학생이 SKY · 의치한약수에 합격했어요. 직접 받은 감사 메시지 중 일부예요.</span></figcaption>
 </figure>
 </div>
+</div>
 
-<div style="display: flex; align-items: center; gap: 14px; margin: 24px 0 0 -16px"><span style="width: 56px; height: 56px; flex-shrink: 0; border-radius: 14px; background: {{accent}}; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M19 6a8 8 0 0 1 0 12"></path></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 700; letter-spacing: 0.08em; color: #70737C">PART 2</span><span style="font-size: clamp(28px, 3.2vw, 36px); font-weight: 700; letter-spacing: -0.02em; color: #171719">마케팅</span></span><span aria-hidden="true" style="flex: 1; height: 1px; margin-left: 8px; background: rgba(112,115,124,0.22)"></span><span style="font-size: 17px; font-weight: 500; color: #70737C">인지부터 결제까지</span></div>
+<div style="display: flex; align-items: center; gap: 14px; margin: 24px 0 -16px"><span style="width: 56px; height: 56px; flex-shrink: 0; border-radius: 14px; background: {{accent}}; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M19 6a8 8 0 0 1 0 12"></path></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 700; letter-spacing: 0.08em; color: #70737C">PART 2</span><span style="font-size: clamp(28px, 3.2vw, 36px); font-weight: 700; letter-spacing: -0.02em; color: #171719">마케팅</span></span><span aria-hidden="true" style="flex: 1; height: 1px; margin-left: 8px; background: rgba(112,115,124,0.22)"></span><span style="font-size: 17px; font-weight: 500; color: #70737C">인지부터 결제까지</span></div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 
 <div class="lift" style="flex: 2 1 560px; min-width: 0; padding: clamp(24px, 3vw, 32px); border-radius: 20px; background: #FFFFFF; box-shadow: inset 0 0 0 1px rgba(112,115,124,0.12); display: flex; flex-wrap: wrap; gap: 28px; align-items: center">
@@ -289,6 +294,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 </ol>
 </div>
 
+<div class="swipe">
 <div class="lift" style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 20px; background: #FFFFFF; box-shadow: inset 0 0 0 1px rgba(112,115,124,0.12); display: flex; flex-direction: column; gap: 14px">
 <span style="font-size: 14px; font-weight: 700; color: {{accent}}">네이버 블로그 · 카피라이팅</span>
 <div aria-hidden="true" style="position: relative; border-radius: 14px; background: #F7F7F8; overflow: hidden">
@@ -334,6 +340,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 <div style="aspect-ratio: 2 / 1; overflow: hidden"><img src="assets/9b008ae5ff8a4c71aa98c236840c5cb5.jpg" alt="리베라 입시컨설팅 2021 올해의 우수브랜드 대상 1위 수상 이미지" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
 <figcaption style="padding: 22px 28px 28px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 20px; font-weight: 700; color: #171719">2021 올해의 우수브랜드 대상 1위</span><span style="font-size: 15px; line-height: 24px; font-weight: 500; color: #5A5C63">중앙일보가 선정한 입시컨설팅 부문 1위 브랜드예요.</span></figcaption>
 </figure>
+</div>
 </div>
 </div>
 </section>
@@ -596,7 +603,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 24px">
 <h3 style="margin: 0; font-size: clamp(28px, 3.2vw, 36px); line-height: 1.25; font-weight: 700; letter-spacing: -0.02em; color: #171719">다른 프로젝트</h3>
 </div>
-<div class="g2c">
+<div class="g2c hswipe">
 <article class="lift zoom" style="border-radius: 20px; overflow: hidden; background: #FFFFFF; box-shadow: inset 0 0 0 1px rgba(112,115,124,0.16); display: flex; flex-direction: column">
 <div style="aspect-ratio: 16 / 10; overflow: hidden; background: #F3F6FC; padding: 14px; display: flex; align-items: center"><img src="assets/a4392b7b899fffceaeb8f832c9366097.jpg" alt="만취와 뇌졸중을 얼굴 비대칭, 구음 장애, 동공 반응으로 30초 만에 구분하는 AI 구조도" style="width: 100%; height: 100%; object-fit: contain; display: block"></div>
 <div style="padding: 22px 24px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1">
@@ -783,6 +790,9 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 </li>
 </sc-for>
 </ul>
+<sc-if value="{{awHasMore}}" hint-placeholder-val="{{ true }}">
+<button type="button" onClick="{{toggleAw}}" aria-expanded="{{awAll}}" class="btn" style="align-self: center; height: 44px; padding: 0 20px; border: 0; border-radius: 12px; background: #FFFFFF; box-shadow: inset 0 0 0 1px rgba(112,115,124,0.32); color: #171719; font-size: 16px; font-weight: 600">{{awLabel}}</button>
+</sc-if>
 </div>
 </section>
 
@@ -1098,9 +1108,9 @@ class Component extends DCLogic {
       { y: '2026.10', t: '제12회 과학치안 아이디어 공모전 장려상', p: '경찰청장상 · 국민 부문', d: 'AI 기반 보호조치 대상자 응급위험 선별 및 비접촉 레이더 생체 감시 시스템', c: 'health', img: 'cebdbab947c67ba90d2166e23fa529b0' },
       { y: '2026.09', t: '2026 국방창업경진대회 대상', p: '국방부장관상 · 1,797:1 · 범정부 창업경진대회 국방부 대표 선발', d: 'Infusafe: 정맥주사 침윤 조기 감지 무선 스마트 패치', c: 'startup', img: '502cac68685fa86b1cad84170234209b', top: true },
       { y: '2026.08', t: '2026 달서 전국 대학생 AI활용 아이디어 콘테스트 동상', p: '대구광역시 달서구청장상 · 팀 SafeNight', d: '달빛나침반: AI 기반 야간 소아 응급 상담 · 접수 서비스', c: 'health', img: 'd01751c3e59fb1df167e556c1b480c76' },
-      { y: '2026.07', t: '보건의료빅데이터 · AI 활용 창업경진대회 우수상', p: '건강보험심사평가원장상 · 아이디어 기획 부문', d: 'Recla: 암 생존자 재발 공포(FCR) 관리 디지털 치료기기', c: 'health', img: 'd49d96003d6407e35f599b0527b25b16' },
+      { y: '2026.07', t: '보건의료빅데이터 · AI 활용 창업경진대회 우수상', p: '건강보험심사평가원장상 · 아이디어 기획 부문', d: 'Recla: 암 생존자 재발 공포(FCR) 관리 디지털 치료기기', c: 'health', key: true, img: 'd49d96003d6407e35f599b0527b25b16' },
       { y: '2026.06', t: '대학증명 아이디어 공모전 대상', p: '한국정보인증(KICA)', d: 'EduCredit: 대학 학적 데이터 기반 대안신용평가 · 금융상품 연계 모델', c: 'startup', img: '8f12272f9f41277d51b192abc734340d', top: true },
-      { y: '2026.05', t: '제15회 육군창업경진대회 최우수상', p: '한국경제신문사 사장상 · 651팀 중 2위', d: 'Infusafe: 드레싱 일체형 무선 스마트 패치', c: 'startup', img: 'army-startup-cert' },
+      { y: '2026.05', t: '제15회 육군창업경진대회 최우수상', p: '한국경제신문사 사장상 · 651팀 중 2위', d: 'Infusafe: 드레싱 일체형 무선 스마트 패치', c: 'startup', key: true, img: 'army-startup-cert' },
       { y: '2026.05', t: '산업안전보건 혁신 아이디어 공모전 대상', p: '산업안전상생재단 이사장상 · 600팀 중 1위', d: '"이해했는지"를 증명하는 외국인 안전교육 플랫폼 · 현대자동차그룹 출연', c: 'idea', img: 'b8e5ef9bad4a6bd9e0f31f584bdc9d27', top: true },
       { y: '2026.04', t: '5군단 승진 과학기술강군 공모전 3위', p: '제5군단장상 · 130팀 지원', d: 'K계열 궤도장비 AI 기반 스마트 상태기반정비(CBM) 체계', c: 'defense', img: '3acdb495fffb4ceed842f8cec6f9d914' },
       { y: '2026', t: '현존전력 극대화 공모전 1위 · 2위 동시 수상', p: '2026-1차', d: 'K200 계열 장갑차 스마트 상태기반정비(1위), 전파교란 대응 AI 표적유도 모듈(2위)', c: 'defense', top: true },
@@ -1139,7 +1149,10 @@ class Component extends DCLogic {
     const years = yearKeys.map((y, i) => ({ y: y, n: yc[i], h: Math.round((yc[i] / ymax) * 78), bg: y === '2026' ? accent : '#C2C4C8' }));
     const yearAria = '연도별 수상 건수: ' + yearKeys.map((y, i) => y + '년 ' + yc[i] + '건').join(', ');
 
-    const awards = all.filter((x) => cat === 'all' || x.c === cat).map((x) => ({
+    const awAll = !!st.awAll;
+    const awFiltered = all.filter((x) => cat === 'all' || x.c === cat);
+    const awCollapsible = cat === 'all';
+    const awards = (awCollapsible && !awAll ? awFiltered.filter((x) => x.top || x.key) : awFiltered).map((x) => ({
       y: x.y, t: x.t, p: x.p, d: x.d, top: !!x.top,
       catLabel: catName[x.c], hasImg: !!x.img, img: x.img ? B(x.img) : '',
       viewLabel: x.t + ' 상장 크게 보기',
@@ -1234,6 +1247,8 @@ class Component extends DCLogic {
       mktBg: m.bg, mktColor: m.color, mktShadow: m.shadow,
       teachers: teachers, audience: audience,
       cats: cats, catSegs: catSegs, years: years, yearAria: yearAria,
+      awHasMore: awCollapsible, awAll: awAll, awLabel: awAll ? '접기' : '수상 ' + all.length + '건 모두 보기',
+      toggleAw: () => this.setState({ awAll: !awAll }),
       awards: awards, awardCount: all.length + '건', topCount: String(all.filter((x) => x.top).length),
       cmX: cmX, cmP: cmP, epochs: epochs,
       books: books, goCells: goCells, goStones: goStones,
