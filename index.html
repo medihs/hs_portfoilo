@@ -428,24 +428,6 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 </div>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
-<div style="flex: 1 1 100%; min-width: 0; border-radius: 20px; background: #FFFFFF; padding: clamp(20px, 3vw, 36px); display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 24px"><span style="display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; color: {{accent}}">WHY INFUSAFE · 기존 방식과 비교</span><span style="font-size: 20px; line-height: 28px; font-weight: 700; letter-spacing: -0.012em; color: #171719">이미 있는 제품과 무엇이 다를까요?</span></span></div>
-<div style="overflow-x: auto">
-<table style="width: 100%; min-width: 560px; border-collapse: separate; border-spacing: 0; font-size: 16px; table-layout: fixed">
-<thead><tr><th scope="col" style="text-align: left; padding: 12px 18px; font-size: 13px; font-weight: 600; color: #70737C"></th><th scope="col" style="text-align: left; padding: 12px 18px; border-radius: 10px 10px 0 0; background: rgba(0,102,255,0.08); font-size: 14px; font-weight: 700; color: #0054D1">Infusafe</th><th scope="col" style="text-align: left; padding: 12px 18px; font-size: 14px; font-weight: 600; color: #46474C">기존 광학 센서</th><th scope="col" style="text-align: left; padding: 12px 18px; font-size: 14px; font-weight: 600; color: #46474C">스마트 펌프</th></tr></thead>
-<tbody>
-<tr><th scope="row" style="text-align: left; padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); font-weight: 600; color: #5A5C63">침윤 감지</th><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); background: rgba(0,102,255,0.08); font-weight: 700; color: #171719">18분 이내</td><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); color: #46474C">가능</td><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); color: #70737C">불가</td></tr>
-<tr><th scope="row" style="text-align: left; padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); font-weight: 600; color: #5A5C63">실제 유량 측정</th><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); background: rgba(0,102,255,0.08); font-weight: 700; color: #171719">±3~5% 정밀도</td><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); color: #70737C">불가</td><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); color: #46474C">설정값만 확인</td></tr>
-<tr><th scope="row" style="text-align: left; padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); font-weight: 600; color: #5A5C63">설치</th><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); background: rgba(0,102,255,0.08); font-weight: 700; color: #171719">드레싱 위에 끼우기</td><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); color: #46474C">별도 센서 + 유선</td><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); color: #70737C">해당 없음</td></tr>
-<tr><th scope="row" style="text-align: left; padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); font-weight: 600; color: #5A5C63">오알람</th><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); border-radius: 0 0 10px 10px; background: rgba(0,102,255,0.08); font-weight: 700; color: #171719">목표 5% 이하</td><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); color: #46474C">15~20%</td><td style="padding: 16px 18px; border-top: 1px solid rgba(112,115,124,0.16); color: #70737C">해당 없음</td></tr>
-</tbody>
-</table>
-</div>
-<p style="margin: 0; padding: 14px 18px; border-radius: 14px; background: #F7F7F8; font-size: 16px; line-height: 26px; font-weight: 500; color: #46474C">감지 기술 자체는 이미 있었지만, 설치가 번거로워 현장에서 잘 쓰이지 않았어요.<br>Infusafe는 <b style="color: #171719">간호사가 지금 하는 일을 바꾸지 않는 것</b>부터 출발해 설계했어요.</p>
-</div>
-
-</div>
 </div>
 
 <div class="fade" style="border-radius: 28px; background: #F7F7F8; padding: clamp(14px, 2.4vw, 28px); display: flex; flex-direction: column; gap: 14px">
@@ -1123,7 +1105,7 @@ class Component extends DCLogic {
       { y: '2026.04', t: '5군단 승진 과학기술강군 공모전 3위', p: '제5군단장상 · 130팀 지원', d: 'K계열 궤도장비 AI 기반 스마트 상태기반정비(CBM) 체계', c: 'defense', img: '3acdb495fffb4ceed842f8cec6f9d914' },
       { y: '2026', t: '현존전력 극대화 공모전 1위 · 2위 동시 수상', p: '2026-1차', d: 'K200 계열 장갑차 스마트 상태기반정비(1위), 전파교란 대응 AI 표적유도 모듈(2위)', c: 'defense', top: true },
       { y: '2026', t: '청년안보스피치대회 2위', p: '국회 국방위원장상 · 국방부 × 전쟁기념관', d: '청진기와 스패너 사이에서 발견한 전쟁을 막는 과학기술', c: 'defense' },
-      { y: '2026', t: '1기갑여단 드림챌린지 대상', p: '장병 3,000명 중 드림 스피치 1위', d: '', c: 'defense', top: true, img: 'dream-challenge-cert' },
+      { y: '2025', t: '1기갑여단 드림챌린지 대상', p: '장병 3,000명 중 드림 스피치 1위', d: '', c: 'defense', top: true, img: 'dream-challenge-cert' },
       { y: '2022.12', t: '보건의료 ESG 혁신 아이디어 공모전 대상', p: '고려대학교의료원 · 사회공헌원', d: 'Kumes: 의료원 웹사이트 리뉴얼 및 ESG 행동 기반 리워드 플랫폼', c: 'health', img: '3b01e4aa2586f8c83319d792dfc3df48', top: true },
       { y: '2022.12', t: 'KCESI 혁신 아이디어 공모전 장려상', p: '대한건설기계안전관리원', d: 'Susuro: 건설기계 근로자 자발적 안전관리 플랫폼', c: 'idea', img: 'c42aeabe6c88f1bfe6978740ebe62884' },
       { y: '2022', t: 'KPR PR 아이디어 공모전 수상', p: 'KPR', d: '글로벌 기업 지멘스의 ESG 마케팅 및 프로그램 기획', c: 'idea' },
