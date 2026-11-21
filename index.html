@@ -65,6 +65,10 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 .g2c{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
 .swipe{display:contents}
 .swipe-hint{display:none}
+.swind{display:none}
+@media (max-width:640px){.sw{display:flex!important;flex-wrap:nowrap;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}.sw::-webkit-scrollbar{display:none}.sw>*{flex:0 0 78%;scroll-snap-align:start;min-width:0}.sw .arr{display:none}.swind{display:flex;flex:1 1 100%;align-items:center;gap:10px;margin-top:2px;color:#70737C}.swtrack{position:relative;flex:1;height:4px;border-radius:4px;background:rgba(112,115,124,0.18);overflow:hidden}.swthumb{position:absolute;top:0;bottom:0;left:0;width:30%;border-radius:4px;background:#0066FF;transition:left 120ms linear}.swcount{font-size:13px;font-weight:700;font-variant-numeric:tabular-nums;color:#46474C;min-width:36px;text-align:right}.swico{color:#0066FF;animation:swnudge 1.6s ease-in-out infinite}.swind.dark .swtrack{background:rgba(255,255,255,0.14)}.swind.dark .swthumb{background:#7EB2FF}.swind.dark .swcount{color:#DBDCDF}.swind.dark .swico{color:#7EB2FF}}
+@keyframes swnudge{0%,100%{transform:translateX(0)}50%{transform:translateX(3px)}}
+@media (prefers-reduced-motion:reduce){.swico{animation:none}}
 @media (max-width:640px){.swipe,.hswipe{display:flex!important;flex:1 1 100%;flex-wrap:nowrap!important;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1 * clamp(16px, 4vw, 32px));padding:2px clamp(16px, 4vw, 32px) 6px;scroll-padding:0 clamp(16px, 4vw, 32px);scrollbar-width:none;-webkit-overflow-scrolling:touch}.swipe::-webkit-scrollbar,.hswipe::-webkit-scrollbar{display:none}.swipe>*,.hswipe>*{flex:0 0 84%!important;scroll-snap-align:start;min-width:0}.swipe-hint{display:flex}}
 @media (max-width:760px){.g2c{grid-template-columns:1fr}}
 .stat + .stat{box-shadow:inset 1px 0 0 rgba(112,115,124,0.16)}
@@ -273,6 +277,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 <figcaption style="padding: 22px 28px 28px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 20px; font-weight: 700; color: #171719">학생들이 보내온 합격 소식</span><span style="font-size: 15px; line-height: 24px; font-weight: 500; color: #5A5C63">4년 동안 500명 넘는 학생이 SKY · 의치한약수에 합격했어요. 직접 받은 감사 메시지 중 일부예요.</span></figcaption>
 </figure>
 </div>
+<div class="swind" aria-hidden="true"><span class="swtrack"><span class="swthumb"></span></span><span class="swcount">1 / 7</span><svg class="swico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
 </div>
 
 <div style="display: flex; align-items: center; gap: 14px; margin: 24px 0 -16px"><span style="width: 56px; height: 56px; flex-shrink: 0; border-radius: 14px; background: {{accent}}; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M19 6a8 8 0 0 1 0 12"></path></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 700; letter-spacing: 0.08em; color: #70737C">PART 2</span><span style="font-size: clamp(28px, 3.2vw, 36px); font-weight: 700; letter-spacing: -0.02em; color: #171719">마케팅</span></span><span aria-hidden="true" style="flex: 1; height: 1px; margin-left: 8px; background: rgba(112,115,124,0.22)"></span><span style="font-size: 17px; font-weight: 500; color: #70737C">인지부터 결제까지</span></div>
@@ -341,6 +346,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 <figcaption style="padding: 22px 28px 28px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 20px; font-weight: 700; color: #171719">2021 올해의 우수브랜드 대상 1위</span><span style="font-size: 15px; line-height: 24px; font-weight: 500; color: #5A5C63">중앙일보가 선정한 입시컨설팅 부문 1위 브랜드예요.</span></figcaption>
 </figure>
 </div>
+<div class="swind" aria-hidden="true"><span class="swtrack"><span class="swthumb"></span></span><span class="swcount">1 / 4</span><svg class="swico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
 </div>
 </div>
 </section>
@@ -423,12 +429,13 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 
 <div style="border-radius: 20px; background: #FFFFFF; padding: clamp(20px, 3vw, 32px); display: flex; flex-direction: column; gap: 18px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; color: {{accent}}">HOW IT WORKS · 잘못된 알람을 줄이는 4단계</span>
-<ol class="g4" style="margin: 0; padding: 0; list-style: none">
+<ol class="g4 sw" style="margin: 0; padding: 0; list-style: none">
 <li style="padding: 20px; border-radius: 16px; background: #F7F7F8; display: flex; flex-direction: column; gap: 8px"><span style="width: 32px; height: 32px; border-radius: 10px; background: {{accent}}; color: #FFFFFF; font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center">1</span><span style="font-size: 17px; font-weight: 700; color: #171719">두 신호를 함께 확인</span><span style="font-size: 15px; line-height: 24px; font-weight: 500; color: #5A5C63">피부의 전기저항과 조직 압력이 동시에 변할 때만 침윤을 의심해요.</span></li>
 <li style="padding: 20px; border-radius: 16px; background: #F7F7F8; display: flex; flex-direction: column; gap: 8px"><span style="width: 32px; height: 32px; border-radius: 10px; background: {{accent}}; color: #FFFFFF; font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center">2</span><span style="font-size: 17px; font-weight: 700; color: #171719">움직임은 걸러내기</span><span style="font-size: 15px; line-height: 24px; font-weight: 500; color: #5A5C63">팔을 움직이거나 자세를 바꿀 때 생기는 갑작스러운 변화는 무시해요.</span></li>
 <li style="padding: 20px; border-radius: 16px; background: #F7F7F8; display: flex; flex-direction: column; gap: 8px"><span style="width: 32px; height: 32px; border-radius: 10px; background: {{accent}}; color: #FFFFFF; font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span><span style="font-size: 17px; font-weight: 700; color: #171719">환자마다 다른 기준</span><span style="font-size: 15px; line-height: 24px; font-weight: 500; color: #5A5C63">신생아나 부종 환자처럼 평소 수치가 다른 사람도, 각자의 평소 값에서 벗어날 때만 반응해요.</span></li>
 <li style="padding: 20px; border-radius: 16px; background: rgba(0,102,255,0.07); display: flex; flex-direction: column; gap: 8px"><span style="width: 32px; height: 32px; border-radius: 10px; background: #171719; color: #FFFFFF; font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center">4</span><span style="font-size: 17px; font-weight: 700; color: #171719">AI가 판단하고 알림</span><span style="font-size: 15px; line-height: 24px; font-weight: 500; color: #5A5C63">AI 모델(1D-CNN + LSTM)이 침윤인지 판단하고, 블루투스로 간호사실에 알려요.</span></li>
 </ol>
+<div class="swind" aria-hidden="true"><span class="swtrack"><span class="swthumb"></span></span><span class="swcount">1 / 4</span><svg class="swico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
 <div style="padding: 14px 18px; border-radius: 14px; background: rgba(0,102,255,0.07); color: #0054D1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px">
 <span style="font-size: 16px; font-weight: 700; color: #171719">지금 쓰는 드레싱 위에 붙이기만 하면 끝</span>
 <span style="display: flex; flex-wrap: wrap; gap: 6px"><span style="height: 26px; padding: 0 10px; border-radius: 8px; background: #FFFFFF; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center">추가 장비 없음</span><span style="height: 26px; padding: 0 10px; border-radius: 8px; background: #FFFFFF; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center">추가 케이블 없음</span><span style="height: 26px; padding: 0 10px; border-radius: 8px; background: #FFFFFF; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center">추가 업무 없음</span></span>
@@ -471,7 +478,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 </div>
 <div style="flex: 1.3 1 460px; min-width: 0; border-radius: 20px; background: #FFFFFF; padding: clamp(20px, 3vw, 32px); display: flex; flex-direction: column; gap: 16px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; color: {{accent}}">SOLUTION · 측정 → 대화 → 치료</span>
-<div class="g3">
+<div class="g3 sw">
 <div style="padding: 18px; border-radius: 16px; background: #F7F7F8; display: flex; flex-direction: column; gap: 10px">
 <span aria-hidden="true" style="display: flex; gap: 4px"><span style="flex: 1; height: 22px; border-radius: 6px; background: {{accent}}"></span><span style="flex: 1; height: 22px; border-radius: 6px; background: {{accent}}"></span><span style="flex: 1; height: 22px; border-radius: 6px; background: {{accent}}"></span><span style="flex: 1; height: 22px; border-radius: 6px; background: {{accent}}"></span><span style="flex: 1; height: 22px; border-radius: 6px; background: rgba(0,102,255,0.25)"></span><span style="flex: 1; height: 22px; border-radius: 6px; background: rgba(112,115,124,0.14)"></span><span style="flex: 1; height: 22px; border-radius: 6px; background: rgba(112,115,124,0.14)"></span></span>
 <span style="font-size: 13px; font-weight: 700; color: #70737C">01</span>
@@ -491,6 +498,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 <span style="font-size: 14px; line-height: 22px; font-weight: 500; color: #5A5C63">수용전념치료(ACT)를 8주 동안 진행해요. 임상시험 11건을 종합한 연구에서 효과가 확인됐어요.</span>
 </div>
 </div>
+<div class="swind" aria-hidden="true"><span class="swtrack"><span class="swthumb"></span></span><span class="swcount">1 / 3</span><svg class="swico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
 </div>
 </div>
 
@@ -550,13 +558,14 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 
 <div style="border-radius: 20px; background: #FFFFFF; padding: clamp(20px, 3vw, 32px); display: flex; flex-direction: column; gap: 16px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; color: {{accent}}">USER FLOW · 보호자가 겪는 5단계</span>
-<ol class="g5" style="margin: 0; padding: 0; list-style: none">
+<ol class="g5 sw" style="margin: 0; padding: 0; list-style: none">
 <li style="padding: 18px; border-radius: 16px; background: #F7F7F8; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: {{accent}}">01</span><span style="font-size: 16px; font-weight: 700; color: #171719">증상 입력</span><span style="font-size: 14px; line-height: 22px; font-weight: 500; color: #5A5C63">체온, 지속 기간, 동반 증상</span></li>
 <li style="padding: 18px; border-radius: 16px; background: #F7F7F8; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: {{accent}}">02</span><span style="font-size: 16px; font-weight: 700; color: #171719">AI 정밀 문진</span><span style="font-size: 14px; line-height: 22px; font-weight: 500; color: #5A5C63">빠진 정보를 되물어 요약서로 정리</span></li>
 <li style="padding: 18px; border-radius: 16px; background: #F7F7F8; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: {{accent}}">03</span><span style="font-size: 16px; font-weight: 700; color: #171719">중증도 분류</span><span style="font-size: 14px; line-height: 22px; font-weight: 500; color: #5A5C63">KTAS 5단계로 판단</span></li>
 <li style="padding: 18px; border-radius: 16px; background: #F7F7F8; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: {{accent}}">04</span><span style="font-size: 16px; font-weight: 700; color: #171719">맞춤 병원 안내</span><span style="font-size: 14px; line-height: 22px; font-weight: 500; color: #5A5C63">지금 진료 가능한 가까운 병원</span></li>
 <li style="padding: 18px; border-radius: 16px; background: rgba(0,102,255,0.07); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: {{accent}}">05</span><span style="font-size: 16px; font-weight: 700; color: #171719">도착 전 접수</span><span style="font-size: 14px; line-height: 22px; font-weight: 500; color: #5A5C63">요약서를 미리 보내고, 기다리는 동안 할 일 안내</span></li>
 </ol>
+<div class="swind" aria-hidden="true"><span class="swtrack"><span class="swthumb"></span></span><span class="swcount">1 / 5</span><svg class="swico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
 </div>
 </div>
 </sc-if>
@@ -651,6 +660,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 </div>
 </article>
 </div>
+<div class="swind" aria-hidden="true" style="margin-top: -28px"><span class="swtrack"><span class="swthumb"></span></span><span class="swcount">1 / 4</span><svg class="swico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
 </div>
 </section>
 
@@ -867,13 +877,14 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
 </div>
 </div>
 
-<ol aria-label="AI 워크플로우" class="g5" style="margin: 0; padding: 0; list-style: none; gap: 8px">
+<ol aria-label="AI 워크플로우" class="g5 sw" style="margin: 0; padding: 0; list-style: none; gap: 8px">
 <li style="padding: 16px 18px; border-radius: 14px; background: rgba(255,255,255,0.04); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: #7EB2FF">01 기획</span><span style="font-size: 15px; font-weight: 700; color: #FFFFFF">아이디어 검증</span><span style="font-size: 13px; font-weight: 500; color: rgba(247,247,248,0.6)">Claude · 커스텀 스킬</span></li>
 <li style="padding: 16px 18px; border-radius: 14px; background: rgba(255,255,255,0.04); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: #7EB2FF">02 리서치</span><span style="font-size: 15px; font-weight: 700; color: #FFFFFF">데이터 수집 · 분석</span><span style="font-size: 13px; font-weight: 500; color: rgba(247,247,248,0.6)">DART Open API · MCP</span></li>
 <li style="padding: 16px 18px; border-radius: 14px; background: rgba(255,255,255,0.04); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: #7EB2FF">03 모델링</span><span style="font-size: 15px; font-weight: 700; color: #FFFFFF">의료 AI 학습 · 검증</span><span style="font-size: 13px; font-weight: 500; color: rgba(247,247,248,0.6)">PyTorch · TensorFlow</span></li>
 <li style="padding: 16px 18px; border-radius: 14px; background: rgba(255,255,255,0.04); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: #7EB2FF">04 디자인</span><span style="font-size: 15px; font-weight: 700; color: #FFFFFF">제안서 · 인포그래픽</span><span style="font-size: 13px; font-weight: 500; color: rgba(247,247,248,0.6)">Claude Code 자동화</span></li>
 <li style="padding: 16px 18px; border-radius: 14px; background: {{accent}}; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.8)">05 배포</span><span style="font-size: 15px; font-weight: 700; color: #FFFFFF">서비스 · 웹사이트</span><span style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.8)">Gradio · 이 웹사이트</span></li>
 </ol>
+<div class="swind dark" aria-hidden="true"><span class="swtrack"><span class="swthumb"></span></span><span class="swcount">1 / 5</span><svg class="swico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
 </article>
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
@@ -1051,8 +1062,9 @@ button:focus-visible,a:focus-visible{outline:2px solid #0066FF;outline-offset:2p
       var html = '<div id="app">' + out.join('') + '</div>';
       morphdom(app, html, {
         childrenOnly: true,
-        onBeforeElUpdated: function (from) { if (from.id === 'pbar' || from.id === 'vtype' || from.tagName === 'VIDEO') return false; }
+        onBeforeElUpdated: function (from) { if (from.id === 'pbar' || from.id === 'vtype' || from.tagName === 'VIDEO' || (from.classList && (from.classList.contains('swthumb') || from.classList.contains('swcount')))) return false; }
       });
+      if (window.__swAll) setTimeout(window.__swAll, 0);
     }
   }
   window.DCLogic = DCLogic;
@@ -1267,6 +1279,21 @@ class Component extends DCLogic {
   comp.render();
   if (comp.componentDidMount) comp.componentDidMount();
   window.dispatchEvent(new Event('scroll'));
+  function swUpd(el) {
+    var ind = el.nextElementSibling;
+    if (!ind || !ind.classList.contains('swind')) return;
+    var n = el.children.length, max = el.scrollWidth - el.clientWidth;
+    var r = max > 0 ? el.scrollLeft / max : 0;
+    var w = el.scrollWidth > 0 ? Math.min(100, el.clientWidth / el.scrollWidth * 100) : 100;
+    var th = ind.querySelector('.swthumb'), ct = ind.querySelector('.swcount');
+    if (th) { th.style.width = w.toFixed(1) + '%'; th.style.left = (r * (100 - w)).toFixed(1) + '%'; }
+    if (ct) ct.textContent = (max > 0 ? Math.min(n, Math.round(r * (n - 1)) + 1) : 1) + ' / ' + n;
+  }
+  function swAll() { document.querySelectorAll('.swipe,.hswipe,.sw').forEach(swUpd); }
+  window.__swAll = swAll;
+  document.addEventListener('scroll', function (e) { var t = e.target; if (t && t.classList && (t.classList.contains('sw') || t.classList.contains('swipe') || t.classList.contains('hswipe'))) swUpd(t); }, true);
+  window.addEventListener('resize', swAll);
+  setTimeout(swAll, 60);
   window.__comp = comp;
 
   document.addEventListener('click', function (e) {
